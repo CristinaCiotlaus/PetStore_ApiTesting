@@ -1,0 +1,14 @@
+User Story 1:
+As a user, I want to retrieve a list of all available pets in the store
+
+User Story 2:
+As a user, I want to retrieve information about a specific pet
+
+User Story 3:
+As a user, I want to add a new pet to the store
+
+User Story 4:
+As a user, I want to update an existing pet's information
+
+User Story 5:
+As a user, I want to delete a pet from the store

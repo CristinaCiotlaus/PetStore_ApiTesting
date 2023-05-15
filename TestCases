@@ -1,0 +1,58 @@
+**User Story 1: As a user, I want to retrieve a list of all available pets in the store**
+
+Test Case 1:
+1. Send a GET request to the `/pet` endpoint
+2. Verify that the response code is 200 OK
+3. Verify that the response contains a list of all available pets in the store
+
+Test Case 2:
+1. Send a GET request to the `/pet/findByStatus` endpoint with the `status` parameter set to `available`
+2. Verify that the response code is 200 OK
+3. Verify that the response contains a list of all available pets in the store
+
+**User Story 2: As a user, I want to retrieve information about a specific pet**
+
+Test Case 1:
+1. Send a GET request to the `/pet/{petId}` endpoint with a valid `petId`
+2. Verify that the response code is 200 OK
+3. Verify that the response contains information about the specified pet
+
+Test Case 2:
+1. Send a GET request to the `/pet/{petId}` endpoint with an invalid `petId`
+2. Verify that the response code is 404 Not Found
+
+**User Story 3: As a user, I want to add a new pet to the store**
+
+Test Case 1:
+1. Send a POST request to the `/pet` endpoint with a valid pet object in the request body
+2. Verify that the response code is 200 OK
+3. Verify that the response contains information about the newly added pet
+
+Test Case 2:
+1. Send a POST request to the `/pet` endpoint with an invalid pet object in the request body
+2. Verify that the response code is 400 Bad Request
+
+**User Story 4: As a user, I want to update an existing pet's information**
+
+Test Case 1:
+1. Send a PUT request to the `/pet` endpoint with a valid pet object in the request body and a valid `petId` in the path parameter
+2. Verify that the response code is 200 OK
+3. Verify that the response contains information about the updated pet
+
+Test Case 2:
+1. Send a PUT request to the `/pet` endpoint with an invalid pet object in the request body and a valid `petId` in the path parameter
+2. Verify that the response code is 400 Bad Request
+
+Test Case 3:
+1. Send a PUT request to the `/pet` endpoint with a valid pet object in the request body and an invalid `petId` in the path parameter
+2. Verify that the response code is 404 Not Found
+
+**User Story 5: As a user, I want to delete a pet from the store**
+
+Test Case 1:
+1. Send a DELETE request to the `/pet/{petId}` endpoint with a valid `petId`
+2. Verify that the response code is 200 OK
+
+Test Case 2:
+1. Send a DELETE request to the `/pet/{petId}` endpoint with an invalid `petId`
+2. Verify that the response code is 404 Not Found
